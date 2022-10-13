@@ -2,6 +2,8 @@
 
 /**
  *This function outputs what programming is
+ *
+ *Return: 0 if its prints the description of programming to standard output)
  */
 int main(void)
 {
