@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o $(echo $CFILE | tr $(echo ${CFILE: -1}) 'o')
+gcc -S $CFILE -o $(echo $CFILE | tr ${CFILE: -1} 'o')
