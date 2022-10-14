@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/** 
+/**
  *main - the function identifies positive, negative or zero of a random number
  *
  *Description: random number is generated and tested for postivity
