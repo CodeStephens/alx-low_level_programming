@@ -1,21 +1,19 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
 /**
- *main - prints out the last digit of a random number 
- *
+ *main - prints out the last digit of a random number
  *Description: the usage of rand and its relative functions are used here
  *Return: 0 is outputted for successful execution of the program
  */
 int main(void)
 {
 	int n;
+	int lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	int lastDigit;
 	lastDigit = n % 10;
 	if (n > 5)
 	{
