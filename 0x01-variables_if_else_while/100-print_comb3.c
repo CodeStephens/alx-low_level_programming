@@ -2,8 +2,9 @@
 
 /**
  * main - Prints all possible combinations of two different digits
- * 
- * Description: the order of the arrangement is in ascending  order separated by comma
+ *
+ * Description: the order of the arrangement is in ascending  order separated
+ *   by comma
  * Return: 0 is outputted for successful execution of code
  */
 int main(void)
@@ -19,8 +20,8 @@ int main(void)
 			putchar((num2 + '0');
 
 			if (num1 == 8 && num2 == 9)
-				continue;
-			
+			continue;
+
 			putchar(',');
 			putchar(' ');
 		}
