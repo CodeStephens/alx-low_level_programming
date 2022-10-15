@@ -3,7 +3,7 @@
 /**
  * main - outputs all possible combinations of two two-digit numbers
  *
- * Description: the range is from 0-99, separated by a comma followed by a space
+ * Description: the range is from 0-99,separated by a comma followed by a space
  *
  * Return: for successful execution of coe, print 0
  */
