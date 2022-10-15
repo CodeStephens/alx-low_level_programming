@@ -2,7 +2,7 @@
 
 /**
  * main - Prints all possible combinations of three different digits,
- *     
+ *
  * Description: combinations are to be in ascending order, separated by space
  * Return: 0 is outputted for successful execution of code.
  */
@@ -24,7 +24,7 @@ int main(void)
 
 				if (num1 == 7 && num2 == 8 && num3 == 9)
 					continue;
-				
+
 				putchar(',');
 				putchar(' ');
 			}
