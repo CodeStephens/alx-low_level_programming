@@ -7,7 +7,7 @@
  * c declared as integer
  * Return: 1 if 'c' is lowercase, else 0
  */
-int _islower(int c)
+int _islower(int c) /**parameter c is declared as an integer*/
 {
 	if (c >= 97 && c <= 122)
 	{
