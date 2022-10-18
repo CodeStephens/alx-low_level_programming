@@ -13,8 +13,8 @@ char main(void)
 	while (*count)
 	{
 		_putchar(*count);
-		*count++;
+		count++;
 	}
-	_putchar("\n");
+	_putchar('\n');
 	return (0);
 }
