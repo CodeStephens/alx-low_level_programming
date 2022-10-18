@@ -1,14 +1,20 @@
 #include "main.h"
 
 /**
- *_putchar - prints out a given string to the console
+ *main - Entry point to the program using a defined header file "main.h
  *
  * Description: prints the word _putchar to the console
  * Return: 0 for successful code execution
  */
-int putchar(void)
+char main(void)
 {
-	_putchar("_putchar");
+	char *count = "main";
+
+	while (*count)
+	{
+		_putchar(*count);
+		*count++;
+	}
 	_putchar("\n");
 	return (0);
 }
