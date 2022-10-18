@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * abs - computes the absolute of any given number
+ * _abs - computes the absolute of any given number
  * @r: integer declared parameter to be checked
  *
  * Description: the absolute value of the argument is printed to the console
@@ -12,5 +12,5 @@ int _abs(int r)
 	if (r >= 0)
 		return (r);
 	else
-		return (r * -1); 
+		return (r * -1);
 }
