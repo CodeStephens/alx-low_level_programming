@@ -16,5 +16,5 @@ char main(void)
 		count++;
 	}
 	_putchar('\n');
-	return (0);
+	return ('c');
 }
