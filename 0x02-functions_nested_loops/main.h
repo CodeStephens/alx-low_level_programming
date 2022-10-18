@@ -1,4 +1,5 @@
-#ifndef main
-#define main
+#ifndef mainh
+#define mainh
 
+	char _putchar(char c);
 #endif
