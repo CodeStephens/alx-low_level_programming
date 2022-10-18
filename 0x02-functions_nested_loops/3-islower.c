@@ -2,6 +2,7 @@
 
 /**
  *_islower - checks for lowercase validity of inputted character
+ *@parameter c - the declared integer to be checked
  *
  * Description: if conditional statement is use for the logical test on
  * c declared as integer
