@@ -2,17 +2,15 @@
 
 /**
  * abs - computes the absolute of any given number
- * @parameter: integer declared parameter to be checked
+ * @r: integer declared parameter to be checked
  *
  * Description: the absolute value of the argument is printed to the console
  * Return: 0 or any integer value greater than 0 for successful code execution
  */
-int _abs(int)
+int _abs(int r)
 {
-	int c; /** c is the parameter for the function signature*/
-
-	if (c >= 0)
-		return (c);
+	if (r >= 0)
+		return (r);
 	else
-		return (c * -1); 
+		return (r * -1); 
 }
