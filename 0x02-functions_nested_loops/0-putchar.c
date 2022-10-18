@@ -6,7 +6,7 @@
  * Description: prints the word _putchar to the console
  * Return: 0 for successful code execution
  */
-char main(void)
+int main(void)
 {
 	char *count = "main";
 
@@ -16,5 +16,5 @@ char main(void)
 		count++;
 	}
 	_putchar('\n');
-	return ('c');
+	return (0);
 }
