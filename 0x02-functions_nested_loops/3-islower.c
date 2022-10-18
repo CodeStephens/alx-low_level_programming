@@ -2,13 +2,13 @@
 
 /**
  *_islower - checks for lowercase validity of inputted character
- *@ c: the declared integer to be checked
+ *@ c: integer declared with function
  *
  * Description: if conditional statement is use for the logical test on
  * c declared as integer
  * Return: 1 if 'c' is lowercase, else 0
  */
-int _islower(int c) 
+int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 	{
