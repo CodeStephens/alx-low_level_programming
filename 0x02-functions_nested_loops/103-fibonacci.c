@@ -13,7 +13,7 @@ int main(void)
 	long int initializingNum2 = 2;
 	long int nextNum;
 
-	while (initializingNum2 >= 3000000 && initializingNum2 <= 4000000)
+	while (initializingNum2 <= 3500000)
 	{
 		if (initializingNum == 0)
 			printf("%ld", initializingNum);
