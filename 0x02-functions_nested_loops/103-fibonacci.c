@@ -12,20 +12,15 @@ int main(void)
 	long int initializingNum = 1;
 	long int initializingNum2 = 2;
 	long int nextNum;
+	long int sum = initializingNum + initializingNum2;
 
 	while (initializingNum2 <= 3500000)
 	{
-		if (initializingNum == 0)
-			printf("%ld", initializingNum);
-		else if (initializingNum2 == 1)
-			printf(", %ld", initializingNum2);
-		else
-		{
-			nextNum = initializingNum + initializingNum2;
-			printf(", %ld", nextNum);
-			initializingNum =  initializingNum2;
-			initializingNum2 = nextNum;
-		}
+		nextNum = initializingNum + initializingNum2;
+		initializingNum =  initializingNum2;
+		initializingNum2 = nextNum;
+		sum += initializingNum2;
+		printf("%ld\n", sum);
 	}
 	return (0);
 }
