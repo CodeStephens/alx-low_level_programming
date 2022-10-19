@@ -10,7 +10,7 @@ int main(void)
 {
 	int count = 0;
 
-	unsiged long int initializingNum = 1;
+	unsigned long int initializingNum = 1;
 	unsigned long int initializingNum2 = 2;
 	unsigned long int nextNum;
 
