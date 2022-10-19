@@ -17,13 +17,13 @@ int main(void)
 	while (count <= 98)
 	{
 		if (count == 0)
-			printf("%ud", initializingNum);
+			printf("%ul", initializingNum);
 		else if (count == 1)
-			printf(", %ud", initializingNum2);
+			printf(", %ul", initializingNum2);
 		else
 		{
 			nextNum = initializingNum + initializingNum2;
-			printf(", %ud", nextNum);
+			printf(", %ul", nextNum);
 			initializingNum =  initializingNum2;
 			initializingNum2 = nextNum;
 		}
