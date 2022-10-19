@@ -26,11 +26,9 @@ int print_to_98(int n)
 	{
 		for (i = n; i > 98; i--)
 		{
-			if (i > 98)
-				printf("%d, ", i);
-			else
-				printf("98\n");
+			printf("%d, ", i);
 		}
+		printf("98\n");
 	}
-			return (0);
+return (0);
 }
