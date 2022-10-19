@@ -12,7 +12,6 @@ int main(void)
 	long int initializingNum = 1;
 	long int initializingNum2 = 2;
 	long int nextNum;
-	long int sum = 0;
 
 	while (initializingNum2 >= 3000000 && initializingNum2 <= 4000000)
 	{
