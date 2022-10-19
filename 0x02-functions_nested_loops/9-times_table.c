@@ -1,63 +1,45 @@
 #include "main.h"
 
 /**
- * times_table - multiplication tables from 0 to 9
- *
- * Description: prints the output of multiplication table from 0 to 9
- * Return: 0 for successful code execution
- */
+  * times_table - multiplication table from 0 - 9 is printed to the console
+  *
+  * Description: a simple multilplication table
+  * Return: nothing is outputted because of its void function type
+  */
 void times_table(void)
 {
-	int i, j, multResult;
+	int i, j;
+	int result, unitDigit, tensDigit;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			multResult = i * j;
-			if (multResult < 10)
+			result = i * j;
+
+			if (result > 9)
 			{
-				if (j == 0)
-					_putchar(multResult + '0');
-				else if (j > 0 && j <9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(multResult + '0');
-				}
-				else
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(multResult + '0');
-					_putchar('\n');
-				}
+				unitDigit = result % 10;
+				tensDigit = (result - unitDigit) / 10;
+
+				_putchar(',');
+				_putchar(' ');
+				_putchar(tensDigit + '0');
+				_putchar(unitDigit + '0');
 			}
 			else
 			{
-				if (j == 0)
-				{
-					_putchar((multResult / 10) + '0');
-					_putchar((multResult % 10) + '0');
-				}
-				else if (j > 0 && j < 9)
+				if (j != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar((multResult / 10) + '0');
-					_putchar((multResult % 10) + '0');
-				}
-				else
-				{
-					_putchar(',');
 					_putchar(' ');
-					_putchar((multResult / 10) + '0');
-					_putchar((multResult % 10) + '0');
-					_putchar('\n');
 				}
+
+				_putchar(result + '0');
 			}
 		}
+
+		_putchar('\n');
 	}
 }
