@@ -27,10 +27,10 @@ int main(void)
 			initializingNum =  initializingNum2;
 			initializingNum2 = nextNum;
 		}
-		if (initializingNum2 % 2 == 0)`
+		if (initializingNum2 % 2 == 0)
 		{
 			sum += initializingNum2;
 		}
 	}
 	return (0);
-}:w
+}
