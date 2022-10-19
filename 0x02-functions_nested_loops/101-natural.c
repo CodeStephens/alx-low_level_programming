@@ -17,10 +17,7 @@ int main(void)
 		{
 			sum += count;
 		}
-
-		count++;
 	}
-
 	printf("%d\n", sum);
 	return (0);
 }
