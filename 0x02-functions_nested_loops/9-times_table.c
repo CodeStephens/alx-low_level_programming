@@ -22,12 +22,12 @@ void times_table(void)
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(multiResult + '0');
+					_putchar(multResult + '0');
 				}
 				else
 					_putchar(',');
 					_putchar(' ');
-					_putchar(multiResult + '0');
+					_putchar(multResult + '0');
 					_putchar('\n');
 			}
 			else
@@ -36,13 +36,13 @@ void times_table(void)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar((multRiesult / 10) + '0');
+					_putchar((multResult / 10) + '0');
 					_putchar((multResult % 10) + '0');
 				}
 				else
 				{
-					_putchar((multiResult / 10) + '0');
-					_putchar((multiResult % 10) + '0');
+					_putchar((multResult / 10) + '0');
+					_putchar((multResult % 10) + '0');
 					_putchar('\n');
 				}
 			}
