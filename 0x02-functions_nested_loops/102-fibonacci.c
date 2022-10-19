@@ -11,7 +11,7 @@ int main(void)
 	int count = 0;
 
 	int initializingNum = 1;
-	int intialiazingNum2 = 2;
+	int initialiazingNum2 = 2;
 	int nextNum;
 
 	while (count < 50)
@@ -24,7 +24,7 @@ int main(void)
 		{
 			nextNum = initializingNum + initializingNum2;
 			printf(", %d", nextNum);
-			initializingNum1 =  initializingNum2;
+			initializingNum =  initializingNum2;
 			initializingNum2 = nextNum;
 		}
 
