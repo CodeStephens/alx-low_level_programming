@@ -12,8 +12,9 @@ int main(void)
 	long int initializingNum = 1;
 	long int initializingNum2 = 2;
 	long int nextNum;
+	long int sum = 0;
 
-	while (initializingNum2 <= 4000000)
+	while (initializingNum2 >= 3000000 && initializingNum2 <= 4000000)
 	{
 		if (initializingNum == 0)
 			printf("%ld", initializingNum);
@@ -25,13 +26,11 @@ int main(void)
 			printf(", %ld", nextNum);
 			initializingNum =  initializingNum2;
 			initializingNum2 = nextNum;
-				if (initializingNum2 >= 4000000)
-					break;
-				else
-					continue;
+		}
+		if (initializingNum2 % 2 == 0)`
+		{
+			sum += initializingNum2;
 		}
 	}
-
-	printf("\n");
 	return (0);
-}
+}:w
