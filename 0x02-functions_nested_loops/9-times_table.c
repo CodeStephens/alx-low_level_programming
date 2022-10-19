@@ -17,7 +17,9 @@ void times_table(void)
 			multResult = i * j;
 			if (multResult < 10)
 			{
-				if (j < 9)
+				if (j == 0)
+					_putchar(multResult + '0');
+				else if (j > 0 && j <9)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -34,7 +36,12 @@ void times_table(void)
 			}
 			else
 			{
-				if (j < 9)
+				if (j == 0)
+				{
+					_putchar((multResult / 10) + '0');
+					_putchar((multResult % 10) + '0');
+				}
+				else if (j > 0 && j < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -43,6 +50,8 @@ void times_table(void)
 				}
 				else
 				{
+					_putchar(',');
+					_putchar(' ');
 					_putchar((multResult / 10) + '0');
 					_putchar((multResult % 10) + '0');
 					_putchar('\n');
