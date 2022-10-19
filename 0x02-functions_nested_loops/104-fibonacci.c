@@ -10,20 +10,20 @@ int main(void)
 {
 	int count = 0;
 
-	unsigned long int initializingNum = 1;
-	unsigned long int initializingNum2 = 2;
-	unsigned long int nextNum;
+	long long int initializingNum = 1;
+	long long int initializingNum2 = 2;
+	long long int nextNum;
 
 	while (count <= 98)
 	{
 		if (count == 0)
-			printf("%ul", initializingNum);
+			printf("%lld", initializingNum);
 		else if (count == 1)
-			printf(", %ul", initializingNum2);
+			printf(", %lld", initializingNum2);
 		else
 		{
 			nextNum = initializingNum + initializingNum2;
-			printf(", %ul", nextNum);
+			printf(", %lld", nextNum);
 			initializingNum =  initializingNum2;
 			initializingNum2 = nextNum;
 		}
