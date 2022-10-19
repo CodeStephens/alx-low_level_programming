@@ -10,9 +10,9 @@ int main(void)
 {
 	int count = 0;
 
-	long long int initializingNum = 1;
-	long long int initializingNum2 = 2;
-	long long int nextNum;
+	unsiged long int initializingNum = 1;
+	unsigned long int initializingNum2 = 2;
+	unsigned long int nextNum;
 
 	while (count <= 98)
 	{
