@@ -29,7 +29,7 @@ int print_to_98(int n)
 			if (i > 98)
 				printf("%d, ", i);
 			else
-				print("98\n");
+				printf("98\n");
 		}
 	}
 			return (0);
