@@ -20,7 +20,7 @@ void times_table(void)
 				_putchar(multResult + '0');
 				_putchar(',');
 				_putchar(' ');
-				if (j == "9")
+				if (j == '9')
 					_putchar('\n');
 				else
 					_putchar(' ');
@@ -30,7 +30,7 @@ void times_table(void)
 				_putchar((multResult / 10) + '0');
 				_putchar((multResult % 10) + '0');
 				_putchar(',');
-				if (j == "9")
+				if (j == '9')
 					_putchar('\n');
 				else
 					_putchar(' ');
