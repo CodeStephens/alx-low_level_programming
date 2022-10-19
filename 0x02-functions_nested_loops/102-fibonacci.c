@@ -11,7 +11,7 @@ int main(void)
 	int count = 0;
 
 	int initializingNum = 1;
-	int initialiazingNum2 = 2;
+	int initializingNum2 = 2;
 	int nextNum;
 
 	while (count < 50)
