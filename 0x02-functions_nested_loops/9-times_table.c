@@ -17,27 +17,34 @@ void times_table(void)
 			multResult = i * j;
 			if (multResult < 10)
 			{
-				_putchar(multResult + '0');
 				if (j < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
+					_putchar(multiResult + '0');
 				}
 				else
+					_putchar(',');
+					_putchar(' ');
+					_putchar(multiResult + '0');
 					_putchar('\n');
 			}
 			else
 			{
-				_putchar((multResult / 10) + '0');
-				_putchar((multResult % 10) + '0');
 				if (j < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
+					_putchar((multRiesult / 10) + '0');
+					_putchar((multResult % 10) + '0');
 				}
 				else
+				{
+					_putchar((multiResult / 10) + '0');
+					_putchar((multiResult % 10) + '0');
 					_putchar('\n');
+				}
 			}
 		}
 	}
