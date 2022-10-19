@@ -25,10 +25,12 @@ void times_table(void)
 					_putchar(multResult + '0');
 				}
 				else
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(multResult + '0');
 					_putchar('\n');
+				}
 			}
 			else
 			{
