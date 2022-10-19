@@ -35,7 +35,7 @@ void print_times_table(int n)
 				}
 				else
 				{
-					if (result != 0)
+					if (result >= 0 && result < 9)
 					{
 						_putchar(',');
 						_putchar(' ');
