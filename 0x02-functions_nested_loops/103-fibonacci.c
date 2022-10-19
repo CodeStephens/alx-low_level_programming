@@ -25,6 +25,10 @@ int main(void)
 			printf(", %ld", nextNum);
 			initializingNum =  initializingNum2;
 			initializingNum2 = nextNum;
+				if (initializingNum2 >= 4000000)
+					break;
+				else
+					continue;
 		}
 	}
 
