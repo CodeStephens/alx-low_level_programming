@@ -13,11 +13,11 @@ int main(void)
 	long int initializingNum2 = 2;
 	long int nextNum;
 
-	while (initializingNum2 < "4,000,000")
+	while (initializingNum2 <= 4,000,000)
 	{
-		if (count == 0)
+		if (initializingNum == 0)
 			printf("%ld", initializingNum);
-		else if (count == 1)
+		else if (initializingNum2 == 1)
 			printf(", %ld", initializingNum2);
 		else
 		{
