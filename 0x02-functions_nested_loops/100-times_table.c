@@ -35,14 +35,16 @@ void print_times_table(int n)
 				}
 				else 
 				{
-					if (result >= 0)
+					if (result >= 0 && j > 0)
 					{
 						_putchar(',');
 						_putchar(' ');
 						_putchar(' ');
 						_putchar(' ');
+						_putchar(result + '0');
 					}
-					_putchar(result + '0');
+					else
+						_putchar(result + '0');
 				}
 			}
 			_putchar('\n');
