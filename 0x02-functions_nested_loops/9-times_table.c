@@ -6,7 +6,7 @@
  * Description: prints the output of multiplication table from 0 to 9
  * Return: 0 for successful code execution
  */
-int times_table(void)
+void times_table(void)
 {
 	int i, j, multResult;
 
