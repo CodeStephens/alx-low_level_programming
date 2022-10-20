@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,12 +9,8 @@
  */
 int _isdigit(int c)
 {
-	_putchar('c');
-	_putchar(':');
-	_putchar(' ');
-	if ((c >= 0) && (c < 10))
-		_putchar(1);
+	if ((c >= 48) && (c < 58))
+		return (1);
 	else
-		_putchar (0);
-	return (0);
+		return (0);
 }
