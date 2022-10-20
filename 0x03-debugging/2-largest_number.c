@@ -5,9 +5,10 @@
  * @a: first integer
  * @b: second integer
  * @c: third integer
+ *
+ * Description: prints the largest of 3 integers
  * Return: largest number
  */
-
 int largest_number(int a, int b, int c)
 {
     int largest;
