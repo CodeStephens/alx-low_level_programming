@@ -8,12 +8,12 @@
  */
 void print_numbers(void)
 {
-	int count = 48;
+	int iCall = 48;
 
-	while (count < 58)
+	while (iCall < 58)
 	{
-		_putchar(count);
-		count++;
+		_putchar(iCall);
+		iCall++;
 	}
 	_putchar('\n');
 }
