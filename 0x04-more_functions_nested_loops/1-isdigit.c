@@ -10,8 +10,12 @@
 int _isdigit(int c)
 
 {
+	_putchar('c');
+	_putchar(':')
+	_putchar(' ');
 	if ((c >= 0) && (c < 10))
-		return (1);
+		_putchar('1');
 	else
-		return (0);
+		_putchar (0);
+	return (0);
 }
