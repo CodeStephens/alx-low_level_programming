@@ -11,7 +11,7 @@ void print_triangle(int size)
 {
 	int count;
     	int counter = 0;
-	int i = 1;
+	int space;
 
 	if (size <= 0)
 		_putchar('\n');
@@ -19,10 +19,14 @@ void print_triangle(int size)
 	{
 		while (counter <= size)
 		{
-			if (i = size-1)
+			for (space = counter - 1; space > 0;  space--)
+			{
 				_putchar(' ');
-				for (count = 1; count <= size; count++)
+			}
+				for (i = 1; i <= counter; i++)
+				{
 					_putchar('#');
+				}
 			counter++
 				
 		}

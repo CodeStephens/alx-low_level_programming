@@ -33,6 +33,6 @@ int main(void)
 			else if (count % 3 == 0 && count % 5 == 0)
 				printf("FizzBuzz");
 			else
-				printf("%d ", count);
+				printf("%d", count);
 	}
 }
