@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_most_numbers - outputs the number 0-9, excluding 2 & 4 followed 
+ * print_most_numbers - outputs the number 0-9, excluding 2 & 4 followed
  * by a new line
  *
  * Description: _putchar function is used for this purpose
