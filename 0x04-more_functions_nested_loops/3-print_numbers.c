@@ -12,7 +12,7 @@ void print_numbers(void)
 
 	while (iCall < 58)
 	{
-		_putchar(iCall);
+		_putchar('iCall');
 		iCall++;
 	}
 	_putchar('\n');
