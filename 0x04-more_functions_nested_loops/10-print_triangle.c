@@ -11,7 +11,7 @@
 void print_triangle(int size)
 {
 	int count;
-    	int counter;
+	int counter;
 	int space;
 
 	if (size <= 0)
