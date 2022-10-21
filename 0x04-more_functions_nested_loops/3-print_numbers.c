@@ -8,11 +8,11 @@
  */
 void print_numbers(void)
 {
-	int iCall = 48;
+	int i;
 
-	while (iCall < 58)
+	for (i = 0; i < 10; i++)
 	{
-		_putchar('iCall');
+		_putchar(i + '0');
 		iCall++;
 	}
 	_putchar('\n');
