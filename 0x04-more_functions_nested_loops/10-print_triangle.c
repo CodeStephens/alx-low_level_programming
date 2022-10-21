@@ -10,25 +10,24 @@
 void print_triangle(int size)
 {
 	int count;
-    	int counter = 0;
+    	int counter;
 	int space;
 
 	if (size <= 0)
 		_putchar('\n');
 	else
 	{
-		while (counter <= size)
+		for (counter = 0; counter < size; counter++)
 		{
-			for (space = counter - 1; space > 0;  space--)
+			for (space = size - counter; space > 0;  space--)
 			{
 				_putchar(' ');
 			}
-				for (i = 1; i <= counter; i++)
+				for (count = 0; count <= counter; count++)
 				{
 					_putchar('#');
 				}
-			counter++
-				
+			_putchar('\n');
 		}
 	}
 }
