@@ -12,7 +12,7 @@ int main(void)
 {
 	int count;
 
-	for (count = 1; count <= 99; count++)
+	for (count = 1; count <= 100; count++)
 	{
 		if (count != 100)
 		{
@@ -35,4 +35,5 @@ int main(void)
 			else
 				printf("%d", count);
 	}
+	return (0);
 }
