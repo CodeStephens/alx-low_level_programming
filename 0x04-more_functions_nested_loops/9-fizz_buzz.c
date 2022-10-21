@@ -16,22 +16,22 @@ int main(void)
 	{
 		if (count != 100)
 		{
-			if (count % 3 == 0)
+			if (count % 3 == 0 && count % 5 == 0)
+				printf("FizzBuzz ");
+			else if (count % 3 == 0)
 				printf("Fizz ");
 			else if (count % 5 == 0)
 				printf("Buzz ");
-			else if (count % 3 == 0 && count % 5 == 0)
-				printf("FizzBuzz ");
 			else
 				printf("%d ", count);
 		}
 		else
+			if (count % 3 == 0 && count % 5 == 0)
+				printf("FizzBuzz\n");
 			if (count % 3 == 0)
 				printf("Fizz\n");
 			else if (count % 5 == 0)
 				printf("Buzz\n");
-			else if (count % 3 == 0 && count % 5 == 0)
-				printf("FizzBuzz\n");
 			else
 				printf("%d\n", count);
 	}
