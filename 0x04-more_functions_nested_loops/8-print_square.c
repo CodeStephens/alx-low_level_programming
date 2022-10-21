@@ -2,7 +2,8 @@
 
 /**
  * print_square - print '#' to the standard output
- * @size:input function parameter, which determines the number of '#' to be printed
+ * @size:input function parameter, which determines the number of '#' to
+ * be printed
  *
  * Description: _putchar function is used for this purpose
  * Return: nothing because of the "void" nature of the function datatype
