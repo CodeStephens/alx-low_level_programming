@@ -25,7 +25,6 @@ void more_numbers(void)
 				_putchar((counter % 10) + '0');
 			}
 		}
-		_putchar('\n');
 	}
 }
 
