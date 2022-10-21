@@ -17,7 +17,7 @@ i	i = 0;
  /*	{ */
  /*	i{ */
  /*	putchar(i); */
-i /*	}    *`/
+/*	}    *`/
 
 	printf("Infinite loop avoided! \\o/\n");
 	return (0);
