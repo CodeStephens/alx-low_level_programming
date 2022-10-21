@@ -28,7 +28,7 @@ int main(void)
 		else
 			if (count % 3 == 0 && count % 5 == 0)
 				printf("FizzBuzz\n");
-			if (count % 3 == 0)
+			else if (count % 3 == 0)
 				printf("Fizz\n");
 			else if (count % 5 == 0)
 				printf("Buzz\n");
