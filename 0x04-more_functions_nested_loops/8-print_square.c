@@ -10,13 +10,13 @@
 void print_square(int size)
 {
 	int count;
-	int counter = 0;
+	int counter;
 
 	if (size <= 0)
 		_putchar('\n');
 	else
 	{
-		while (counter < size)
+		for (counter = 0; counter < size; counter++)
 		{
 			for (count = 1; count <= size; count++)
 				_putchar('#');
