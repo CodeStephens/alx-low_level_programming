@@ -1,4 +1,4 @@
-#incblude <stdio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -18,7 +18,7 @@ void print_remaining_days(int month, int day, int year)
             		day++;
        		}
         	printf("Day of the year: %d\n", day);
-        	printf("Remaining days: %d\n", 366 - day)
+        	printf("Remaining days: %d\n", 365 - day);
 	}
 	else
 	{
@@ -26,7 +26,7 @@ void print_remaining_days(int month, int day, int year)
         	{
             		printf("Day of the year: %d\n", day);
 			printf("Invalid date:%02d/%02d/%04\n", month, 
-					day - 31i, years)
+					day - 31, year);
 		}
 	       	else
 		{
