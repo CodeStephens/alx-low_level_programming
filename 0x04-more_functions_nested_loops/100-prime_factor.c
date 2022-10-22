@@ -1,24 +1,31 @@
-#include "main.h"
+#include <stdio.h>
+#include <math.h>
 
 /**
- * print_number - prints out the value of inputted integer
- * @n: function parameter which is the integer
+ * main - Entry point to the program
  *
- * Description: takes in an integer and output the same integer using _putchar
- * Return: 0 always
+ * Description: prints out the largest prime number to the standard output
+ * Return: 0 for successful code execution
  */
-void print_number(int n)
+int main(void)
 {
-	unsigned int absValue;
+   unsigned long int N;
+   unsigned long int maxPrime;
+   int count;
 
-	if (n < 0)
-	{
-		absValue = n * -1;
-		_putchar('-');
-		_putchar(absValue);
-	}
-	else
-		_putchar(absValue); 
-	}
-
-}
+   while(N % 2 == 0)
+   {
+	   maxPrime = 2;
+	   N /= 2;
+   }
+   for (count = 3; count <= sqrt(N); count += 2)
+   {
+	   while(N % count == 0)
+	   {
+		   maxPrime = count;
+		   N /= count;
+	   }
+   }
+   if (N > 2)
+	   max = n;
+   return (0);
