@@ -28,6 +28,6 @@ int main(void)
 		}
 	}
 	if (N > 2)
-		max = N;
+		maxPrime = N;
 	return (0);
 }
