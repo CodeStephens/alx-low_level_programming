@@ -2,7 +2,6 @@
 
 /**
  * main - tests function that prints if integer is positive, negative or zero
- * @n: integer parameter to checked for positivity or negativity
  *
  * Description: checking for positivity or negativity
  * Return: 0
