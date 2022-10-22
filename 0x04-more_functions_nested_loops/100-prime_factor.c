@@ -10,7 +10,7 @@
 int main(void)
 {
 	unsigned long int N;
-	int chaneIM;
+	unsigned long int chaneIM;
 	int count;
 
 	N = 612852475143;
@@ -29,6 +29,6 @@ int main(void)
 	}
 	if (N > 2)
 		chaneIM = N;
-	printf("%d", chaneIM);
+	printf("%lu", chaneIM);
 	return (0);
 }
