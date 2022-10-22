@@ -14,14 +14,14 @@ int main(void)
 	int count;
 
 	N = 612852475143;
-	while(N % 2 == 0)
+	while (N % 2 == 0)
 	{
 		maxPrime = 2;
 		N /= 2;
 	}
 	for (count = 3; count <= sqrt(N); count += 2)
 	{
-		while(N % count == 0)
+		while (N % count == 0)
 		{
 			maxPrime = count;
 			N /= count;
