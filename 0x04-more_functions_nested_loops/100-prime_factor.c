@@ -29,3 +29,4 @@ int main(void)
    if (N > 2)
 	   max = n;
    return (0);
+}
