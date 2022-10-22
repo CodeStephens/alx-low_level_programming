@@ -9,24 +9,25 @@
  */
 int main(void)
 {
-   unsigned long int N;
-   unsigned long int maxPrime;
-   int count;
+	unsigned long int N;
+	unsigned long int maxPrime;
+	int count;
 
-   while(N % 2 == 0)
-   {
-	   maxPrime = 2;
-	   N /= 2;
-   }
-   for (count = 3; count <= sqrt(N); count += 2)
-   {
-	   while(N % count == 0)
-	   {
-		   maxPrime = count;
-		   N /= count;
-	   }
-   }
-   if (N > 2)
-	   max = n;
-   return (0);
+	N = 612852475143;
+	while(N % 2 == 0)
+	{
+		maxPrime = 2;
+		N /= 2;
+	}
+	for (count = 3; count <= sqrt(N); count += 2)
+	{
+		while(N % count == 0)
+		{
+			maxPrime = count;
+			N /= count;
+		}
+	}
+	if (N > 2)
+		max = n;
+	return (0);
 }
