@@ -29,6 +29,6 @@ int main(void)
 	}
 	if (N > 2)
 		chaneIM = N;
-	printf("%lu", chaneIM);
+	printf("%lu\n", chaneIM);
 	return (0);
 }
