@@ -28,6 +28,6 @@ int main(void)
 		}
 	}
 	if (N > 2)
-		max = n;
+		max = N;
 	return (0);
 }
