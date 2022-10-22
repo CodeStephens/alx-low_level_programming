@@ -28,7 +28,6 @@ int main(void)
 	}
 	if(N > 2)
 		maxPrime = N;
-	}
 	printf("The largest prime factor is: %d", maxPrime);
 	return (0);
 }
