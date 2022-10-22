@@ -9,25 +9,26 @@
  */
 int main(void)
 {
-	long long int N;
-	unsigned long int maxPrime;
+	unsigned long int N;
+	int chaneIM;
 	int count;
 
 	N = 612852475143;
 	while (N % 2 == 0)
 	{
-		maxPrime = 2;
-		N = N / 2;
+		chaneIM = 2;
+		N /= 2;
 	}
-	for (count = 3; count <= sqrt(N); count = count + 2)
+	for (count = 3; count <= sqrt(N); count += 2)
 	{
 		while (N % count == 0)
 		{
-			maxPrime = count;
-			N = N / count;
+			chaneIM = count;
+			N /= count;
 		}
 	}
 	if (N > 2)
-		maxPrime = N;
+		chaneIM = N;
+	printf("%d", chaneIM);
 	return (0);
 }
