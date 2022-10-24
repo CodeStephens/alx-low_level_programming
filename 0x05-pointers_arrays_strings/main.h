@@ -1,5 +1,5 @@
 #ifndef main_h
-efine main_h
+#define main_h
 	
 	int _putchar(int c);
 	void reset_to_98(int *n);
