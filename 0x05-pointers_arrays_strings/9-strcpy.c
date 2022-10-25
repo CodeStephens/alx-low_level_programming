@@ -5,14 +5,14 @@
  * @dest: given function variable where string is to be copied to
  * @src: given function variable where string is copied from
  *
- * Description: 
+ * Description:
  * Return: 0
  */
 char *_strcpy(char *dest, char *src)
 {
 	int len;
+
 	len = 0;
-	
 	while (*(src + len))
 	{
 		*(dest + len) = *(src + len);
