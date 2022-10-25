@@ -4,7 +4,7 @@
  * _strlen - outputs the length of a string
  * @s: given string to compute its length
  *
- * Description: a loop is used to calculate the string length and pointers 
+ * Description: a loop is used to calculate the string length and pointers
  * used to manipulate the characters of the string
  * Return: 0 for successful code execution
  */
@@ -17,6 +17,5 @@ int _strlen(char *s)
 		len += 1;
 		s++;
 	}
-	_putchar(len + '0');
-	return (0);
+	return (len);
 }
