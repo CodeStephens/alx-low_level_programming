@@ -10,12 +10,19 @@
 void rev_string(char *s)
 {
 	int len = 0;
+	int count = 0;
+	char str[1000];
 
 	while (*(s + len))
+	{
+		*(str + len) = *(s + len);
 		len++;
+	}
 	len -= 1;
 	while (len >= 0)
 	{
-		_putchar(*(s + len));
+		*(s + len) = *(str + count);
+		count++;
+		len--;
 	}
 }
