@@ -1,25 +1,28 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenate a string with another
+ * *_strcat - concatenate a string with another string with n bytes restriction
  * @src: string to concatenate
  * @dest: string to concatenate/append to
+ * @n: masximum number of bytes to be concatenated from src
  *
  * Description:
- * Return: 0
+ * Return: dest
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *initial;
+	int count = 0;
 
 	initial = dest;
 	while (*dest != '\0')
 		dest++;
-	while (*src != '\0')
+	while (count < n)
 	{
 		*dest = *src;
 		dest++;
 		src++;
+		count++;
 	}
 	*dest = '\0';
 	return (initial);
