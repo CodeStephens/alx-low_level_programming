@@ -14,17 +14,16 @@ char *leet(char *c)
 	while (*c != '\0')
 	{
 		if (*c == 'a' || *c == 'A')
-			*c = 4;
+			*c = '4';
 		else if (*c == 'e' || *c == 'E')
-			*c = 3;
+			*c = '3';
 		else if (*c == 'o' || *c == 'O')
-			*c = 0;
+			*c = '0';
 		else if (*c == 't' || *c == 'T')
-			*c = 7;
+			*c = '7';
 		else if (*c == 'l' || *c == 'L')
-			*c == 1;
-		else
-			*c;
+			*c == '1';
+		c++;
 	}
 	return (str);
 }
