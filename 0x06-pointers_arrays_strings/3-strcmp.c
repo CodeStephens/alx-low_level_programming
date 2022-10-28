@@ -21,7 +21,7 @@ int _strcmp(char *s1, char *s2)
 			if (*s1 > *s2)
 				result = 15;
 			else
-				result = -7;
+				result = -15;
 		}
 		s1++;
 		s2++;
