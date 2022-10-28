@@ -18,8 +18,8 @@ char *leet(char *c)
 	{
 		for (i = 0; i < 5; i++}
 		(
-		 	if (*c == b[j] || *c == b[j] - 32)
-				*c = n[j];
+		 	if (*c == b[i] || *c == b[i] - 32)
+				*c = n[i];
 		)
 		c++;
 	}
