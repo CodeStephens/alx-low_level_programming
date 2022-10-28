@@ -10,19 +10,17 @@
 char *leet(char *c)
 {
 	char *str = c;
+	int i;
+	char b[] = {'a'. 'e', 'o', 't', 'l'};
+	char n[] = {'4', '3', '0', '7', '1'};
 
 	while (*c != '\0')
 	{
-		if (*c == 'a' || *c == 'A')
-			*c = '4';
-		else if (*c == 'e' || *c == 'E')
-			*c = '3';
-		else if (*c == 'o' || *c == 'O')
-			*c = '0';
-		else if (*c == 't' || *c == 'T')
-			*c = '7';
-		else if (*c == 'l' || *c == 'L')
-			*c = '1';
+		for (i = 0; i < 5; i++}
+		(
+		 	if (*c == b[j] || *c == b[j] - 32)
+				*c = n[j];
+		)
 		c++;
 	}
 	return (str);
