@@ -11,7 +11,7 @@ char *leet(char *c)
 {
 	char *str = c;
 	int i;
-	char b[] = {'a'. 'e', 'o', 't', 'l'};
+	char b[] = {'a', 'e', 'o', 't', 'l'};
 	char n[] = {'4', '3', '0', '7', '1'};
 
 	while (*c != '\0')
