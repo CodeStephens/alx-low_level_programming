@@ -6,7 +6,7 @@
  * @s2: second function parameter string
  *
  * Description:
- * Return integer
+ * Return: integer
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -15,7 +15,7 @@ int _strcmp(char *s1, char *s2)
 	while (*s1 != '\0' && *s2 != '\0')
 	{
 		if (*s1 == *s2)
-			result == 0;
+			result = 0;
 		else
 		{
 			if (*s1 > *s2)
