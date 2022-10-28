@@ -18,7 +18,7 @@ char *leet(char *c)
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (*c == b[i] || *c == b[i] - 32)
+			if (*c == b[i] || *c == (b[i] - 32))
 				*c = n[i];
 		}
 		c++;
