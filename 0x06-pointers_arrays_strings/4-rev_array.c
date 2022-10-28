@@ -11,7 +11,7 @@
 void reverse_array(int *a, int n)
 {
 	int *initial = a;
-	int *final = a + n -1;
+	int *final = a + n - 1;
 	int placeHolder;
 
 	while (initial < final)
