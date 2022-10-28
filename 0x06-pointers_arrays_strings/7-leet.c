@@ -2,9 +2,9 @@
 
 /**
  * *leet - encodes string into 1337
- * @*c: string pointer given as function parameter
+ * @c: string pointer given as function parameter
  *
- * Description:
+ * Description: changes certain letters with numbers in a given string
  * Return: letters of the alphabet
  */
 char *leet(char *c)
