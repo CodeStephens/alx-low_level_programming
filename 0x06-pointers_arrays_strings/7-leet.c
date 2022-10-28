@@ -16,11 +16,11 @@ char *leet(char *c)
 
 	while (*c != '\0')
 	{
-		for (i = 0; i < 5; i++}
-		(
-		 	if (*c == b[i] || *c == b[i] - 32)
+		for (i = 0; i < 5; i++)
+		{
+			if (*c == b[i] || *c == b[i] - 32)
 				*c = n[i];
-		)
+		}
 		c++;
 	}
 	return (str);
