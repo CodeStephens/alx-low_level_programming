@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncat - concatenate a string with another string with n bytes restriction
+ * *_strncat -concatenate a string with another string with n bytes restriction
  * @src: string to concatenate
  * @dest: string to concatenate/append to
  * @n: masximum number of bytes to be concatenated from src
