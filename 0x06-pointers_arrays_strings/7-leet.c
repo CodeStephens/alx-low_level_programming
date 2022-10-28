@@ -22,7 +22,7 @@ char *leet(char *c)
 		else if (*c == 't' || *c == 'T')
 			*c = '7';
 		else if (*c == 'l' || *c == 'L')
-			*c == '1';
+			*c = '1';
 		c++;
 	}
 	return (str);
