@@ -32,4 +32,5 @@ char *rot13(char *c)
 		}
 		c++;
 	}
+	return (c);
 }
