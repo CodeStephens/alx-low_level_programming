@@ -9,8 +9,6 @@
  */
 void print_number(int n)
 {
-	int rem = 0;
-	
 	if (n < 0)
 	{	
 		n *= -1;
