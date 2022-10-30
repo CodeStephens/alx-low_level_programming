@@ -27,8 +27,10 @@ char *rot13(char *c)
 		for (i = 0; i < 52; i++)
 		{
 			if (*c == prim[i])
+			{
 				*c = conv[i];
 				break;
+			}
 		}
 		c++;
 	}
