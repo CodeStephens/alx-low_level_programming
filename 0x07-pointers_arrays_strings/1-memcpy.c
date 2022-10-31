@@ -2,7 +2,7 @@
 
 /**
  * *_memcpy - to copy n bytes of memory area from src to dest
- * 
+ *
  * @src: function parameter whose character whose n bytes is to be copied
  * @dest: function parameter character to be copued to
  * @n: the maximum number of bytes to be copied
