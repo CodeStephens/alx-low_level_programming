@@ -12,26 +12,26 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int count;
-	int max=-1;
+	int max = -1;
 	char *initial = s;
-       
+
 	while (*accept != '\0')
 	{
-		count=0;
+		count = 0;
 		while (*s != '\0')
 		{
 			count++;
-			if(*accept == *s)
+			if (*accept == *s)
 			{
 				if (max < count)
 				{
-					max=count;
+					max = count;
 				}
 				break;
 			}
 			s++;
 		}
-		s=initial;
+		s = initial;
 		accept++;
 	}
 	return (max);
