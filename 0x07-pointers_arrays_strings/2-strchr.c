@@ -3,6 +3,7 @@
 /**
  * *_strchr - returns the first occurence of a given character
  * @c: given functional parameter character
+ * @s: given character in which to check the occurrence of c;
  *
  * Description:
  * Return: pointer to the first character
