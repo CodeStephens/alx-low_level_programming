@@ -21,12 +21,12 @@ char *_strpbrk(char *s, char *accept)
 			accept++;
 		}
 		if (*s == *accept)
-			break;
+			return (s);
 		else
 		{
 			accept = initial;
 			s++;
 		}
 	}
-	return (s);
+	return ('\0');
 }
