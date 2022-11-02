@@ -14,7 +14,6 @@ unsigned int _strspn(char *s, char *accept)
 	int count;
 	int i = 0;
 	int j = 0;
-	char *initial = s;
 
 	while (*s != '\0')
 	{
