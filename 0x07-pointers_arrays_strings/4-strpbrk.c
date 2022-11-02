@@ -22,11 +22,9 @@ char *_strpbrk(char *s, char *accept)
 		}
 		if (*s == *accept)
 			return (s);
-		else
-		{
-			accept = initial;
-			s++;
-		}
+		accept = initial;
+		s++;
+		
 	}
 	return ('\0');
 }
