@@ -8,9 +8,11 @@
  * Description:
  * Return: integer
  */
+
 int countString(char *s)
 {
-        int res;
+        int *p, res;
+       	p = &res;
 
         if (*s != '\0')
                 res = countString(s + 1) + 1;
@@ -23,10 +25,10 @@ int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (1);
-	else if (*s == *(s + res))
+	else if (*s == *(s + p))
 	{
 		is_palindrome(s + 1);
-		is_palindrome(s + res - 1);
+		is_palindrome(s + p - 1);
 	}
 	else
 		return (0);
