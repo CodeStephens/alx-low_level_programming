@@ -1,4 +1,4 @@
-#includea "main.h"
+#include "main.h"
 
 /**
  * is_palindrome - checks if a given string is a palindrome
