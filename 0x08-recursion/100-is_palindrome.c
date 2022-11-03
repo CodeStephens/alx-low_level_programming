@@ -8,27 +8,25 @@
  * Description:
  * Return: integer
  */
+int i = 0;
 
 int countString(char *s)
 {
-        int *p, res;
-       	p = &res;
-
         if (*s != '\0')
-                res = countString(s + 1) + 1;
+		i = countString(s + 1) + 1;
         else
                 return (0);
-        return (res);
+        return (i);
 }
 
 int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (1);
-	else if (*s == *(s + *p))
+	else if (*s == *(s + i))
 	{
 		is_palindrome(s + 1);
-		is_palindrome(s + *p - 1);
+		is_palindrome(s + i - 1);
 	}
 	else
 		return (0);
