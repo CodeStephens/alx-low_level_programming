@@ -25,10 +25,10 @@ int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (1);
-	else if (*s == *(s + p))
+	else if (*s == *(s + *p))
 	{
 		is_palindrome(s + 1);
-		is_palindrome(s + p - 1);
+		is_palindrome(s + *p - 1);
 	}
 	else
 		return (0);
