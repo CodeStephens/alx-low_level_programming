@@ -25,6 +25,11 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
+			if (coinValue > coins[0])
+			{
+				countCoins = coinValue / coins[0];
+				coinValue %= coins[0];
+			}
 			for (i = 0; i < 5; i++)
 			{
 				if (coins[i] <= coinValue)
