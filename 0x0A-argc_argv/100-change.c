@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		coinValue = atoi(argv[1]);
 		if (coinValue < 0)
-		{	
+		{
 			printf("0\n");
 			return (0);
 		}
