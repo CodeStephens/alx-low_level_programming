@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	if (argc == 2 && isdigit(*argv[1]))
 	{
 		coinValue = atoi(argv[1]);
-		if (coinValue < 0)
+		if (coinValue <= 0)
 			printf("0\n");
 		else
 		{
