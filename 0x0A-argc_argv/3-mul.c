@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		for (i = 0; i < argc; i++)
-			res *= *argv[i];
+		for (i = 1; i < argc; i++)
+			res *= atoi(*argv[i]);
 		printf("%d\n", res);
 		return (0);
 	}
