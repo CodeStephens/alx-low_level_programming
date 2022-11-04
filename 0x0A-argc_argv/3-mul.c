@@ -8,13 +8,15 @@
  * Description: multiplies 2 given argument integers and prints the result
  * Return: integer
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	int res;
-	
+	int res = 1;
+	int i;
+
 	if (argc == 3)
 	{
-		res = argv[1] * argv[2];
+		for (i = 0; i < argc; i++)
+			res *= *argv[i];
 		printf("%d\n", res);
 		return (0);
 	}
