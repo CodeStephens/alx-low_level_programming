@@ -6,18 +6,10 @@
  * @argv: array of argument variable
  *
  * Description:
- * Return: character
+ * Return: integer
  */
 int main(int __attribute__ ((unused)) argc, char *argv[])
 {
-	char *name;
-
-	name = argv[0];
-	while (*name != '\0')
-	{
-		_putchar(*name);
-		name++;
-	}
-	_putchar('\n');
+	printf("%s\n",argv[0]);
 	return (0);
 }
