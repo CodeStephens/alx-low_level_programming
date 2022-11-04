@@ -8,16 +8,16 @@
  * Description:
  * Return: character
  */
-int main(int argc, char *argv[])
+int main(int __attribute__ ((unused)) argc, char *argv[])
 {
-	char name;
-	name = argv;
+	char *name;
+	name = argv[0];
 	
-	while (name != '\0')
+	while (*name != '\0')
 	{
-		_putchar(name);
+		_putchar(*name);
 		name++;
 	}
-	return 0;
+	_putchar('\n');
+	return (0);
 }
-
