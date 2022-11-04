@@ -10,10 +10,13 @@
  */
 int main(int argc, char *argv[])
 {
-	while (*argv[0] != '\0')
+	char name;
+	name = argv;
+	
+	while (name != '\0')
 	{
-		_putchar(*argv[]);
-		argv++;
+		_putchar(name);
+		name++;
 	}
 	return 0;
 }
