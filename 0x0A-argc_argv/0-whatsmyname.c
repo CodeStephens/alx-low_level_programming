@@ -11,8 +11,8 @@
 int main(int __attribute__ ((unused)) argc, char *argv[])
 {
 	char *name;
+
 	name = argv[0];
-	
 	while (*name != '\0')
 	{
 		_putchar(*name);
