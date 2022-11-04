@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int coinValue;
 	int i;
 
-	if (argc == 2)
+	if (argc == 2 && isdigit(*argv[1])
 	{
 		coinValue = atoi(argv[1]);
 		if (coinValue < 0)
@@ -28,16 +28,13 @@ int main(int argc, char *argv[])
 					coinValue -= coins[i];
 					countCoins += 1;
 				}
-				else
-					printf("0\n");
 			}
 	}
-
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d", countCoins);
+	printf("%d\, countCoins);
 	return (0);
 }
