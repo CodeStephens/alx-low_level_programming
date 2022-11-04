@@ -8,7 +8,7 @@
  * Description: multiplies 2 given argument integers and prints the result
  * Return: integer
  */
-int main(int argc, char *argv[])
+int main(int argc, int *argv[])
 {
 	int res;
 	
