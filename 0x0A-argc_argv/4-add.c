@@ -8,6 +8,17 @@
  * Description: adds positive numbers
  * Return: integer
  */
+int checkNum(char *num)
+{
+	while (*num != '\0')
+	{
+		if (isalpha(*num))
+			return (0);
+		else
+			num++;
+	}
+	return (1);
+}
 int main(int argc, char *argv[])
 {
 	int sum = 0;
@@ -22,8 +33,11 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(*argv[i]) && atoi(argv[i]) >= 0)
+			if (isdigit(*argv[i]) && atoi(argv[i]) >= 0
+					&& (checkNum(argv[i])))
 				sum += atoi(argv[i]);
+			else if (isdigit(*argv[i]) && atoi(argv[i]) < 0)
+				sum += 0;
 			else
 			{
 				printf("Error\n");
