@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point to the program
+ * main - Entry point to the program, add positive numbers
  * @argc: argument count
  * @argv: array of argument variable
- *
- * Description: adds positive numbers
+ * checkNum - checks for only digits in decimal base in the given arguments
+ * @num: character pointer referencing each element in the argument array
  * Return: integer
  */
 int checkNum(char *num)
@@ -14,8 +14,7 @@ int checkNum(char *num)
 	{
 		if (isalpha(*num))
 			return (0);
-		else
-			num++;
+		num++;
 	}
 	return (1);
 }
