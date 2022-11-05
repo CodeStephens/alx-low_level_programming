@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int coinValue;
 	int i;
 	char *initial = argv[1];
-	
+
 	if (argc == 2)
 	{
 		while (*argv[1] != '\0')
