@@ -14,11 +14,23 @@ int main(int argc, char *argv[])
 	int countCoins = 0;
 	int coinValue;
 	int i;
-
-	if (argc == 2 && isdigit(*argv[1]))
+	char *initial = argv[1];
+	
+	if (argc == 2)
 	{
+		while (*argv[1] != '\0')
+		{
+			if (isalpha(*argv[1]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+				argv[1]++;
+		}
+		argv[1] = initial;
 		coinValue = atoi(argv[1]);
-		if (coinValue < 0)
+		if (coinValue <= 0)
 		{
 			printf("0\n");
 			return (0);
