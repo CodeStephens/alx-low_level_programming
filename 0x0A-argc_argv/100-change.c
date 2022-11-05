@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 					countCoins += 1;
 				}
 				if (coins[i] <= coinValue)
-					i--;	
+					i--;
 			}
 		}
 	}
