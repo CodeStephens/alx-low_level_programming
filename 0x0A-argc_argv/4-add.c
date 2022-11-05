@@ -1,27 +1,18 @@
-#include "main.h"
+nclude "main.h"
 
 /**
  * main - Entry point to the program, add positive numbers
  * @argc: argument count
  * @argv: array of argument variable
- * checkNum - checks for only digits in decimal base in the given arguments
- * @num: character pointer referencing each element in the argument array
+ *
+ * Description:
  * Return: integer
  */
-int checkNum(char *num)
-{
-	while (*num != '\0')
-	{
-		if (isalpha(*num))
-			return (0);
-		num++;
-	}
-	return (1);
-}
 int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i;
+	char *initial;
 
 	if (argc == 1)
 	{
@@ -32,9 +23,21 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(*argv[i]) && atoi(argv[i]) >= 0
-					&& (checkNum(argv[i])))
+			initial = argv[i];
+			if (isdigit(*argv[i]) && atoi(argv[i]) >= 0)
+			{
+				while (*argv[i] != '\0')
+				{
+					if (isalpha(*argv[i]))
+					{
+						printf("Error\n");
+						return (0);
+					}
+					argv[i]++;
+				}
+				argv[i] = initial;
 				sum += atoi(argv[i]);
+			}
 			else if (isdigit(*argv[i]) && atoi(argv[i]) < 0)
 				sum += 0;
 			else
