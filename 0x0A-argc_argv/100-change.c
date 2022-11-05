@@ -49,6 +49,8 @@ int main(int argc, char *argv[])
 					coinValue -= coins[i];
 					countCoins += 1;
 				}
+				if (coins[i] <= coinValue)
+					i--;	
 			}
 		}
 	}
