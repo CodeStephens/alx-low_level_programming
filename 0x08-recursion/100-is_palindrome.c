@@ -2,32 +2,33 @@
 
 /**
  * is_palindrome - checks if a given string is a palindrome
- * countString - an intermediary function to determine the string length
  * @s: string pointer to a string
  *
  * Description:
  * Return: integer
  */
-int i = 0;
-
-int countString(char *s)
-{
-        if (*s != '\0')
-		i = countString(s + 1) + 1;
-        else
-                return (0);
-        return (i);
-}
-
 int is_palindrome(char *s)
 {
-	if (*s == '\0')
-		return (1);
-	else if (*s == *(s + i))
+	char *initial = s;
+
+	while (*s)
 	{
-		is_palindrome(s + 1);
-		is_palindrome(s + i - 1);
+		count++;
+		s++;
 	}
+	s = initial;
+	if (*s = '\0')
+		return (1);
 	else
-		return (0);
+	{
+		if (*s == *(s+(count - 1)))
+		{
+			s++;
+			is_palindrome(*(s+1));
+			return (1);
+		}
+		else
+			return (0);
+	}
+	return (0);
 }
