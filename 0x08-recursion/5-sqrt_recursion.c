@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt_check - evaluates the square root of a given number 
+ * sqrt_check - evaluates the square root of a given number
  * @num: integer functional parameter in which square root is sort for
  * @n: check to see if c is square root of the number
  *
