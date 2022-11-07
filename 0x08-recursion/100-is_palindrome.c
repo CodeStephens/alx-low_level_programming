@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_palindrome - checks if a given string is a palindrome
+ * _strlen_recursion - evaluates the length of a given string is a palindrome
  * @s: string pointer to a string
  *
  * Description:
