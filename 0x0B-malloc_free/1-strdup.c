@@ -16,7 +16,7 @@ int _strlen(char *n)
 		count++;
 		return (count + _strlen(n + 1));
 	}
-	return (count);
+	return (count + 1);
 }
 /**
  * *_strdup - copies a string to a new memory space
@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	int len;
 	char *ptr;
 	int i;
-	
+
 	if (str == NULL)
 		return (NULL);
 	len = _strlen(str);
