@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 
 /**
  * _strlen - evaluates the length of a given string
@@ -36,6 +36,8 @@ char *str_concat(char *s1, char *s2)
 
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
+	if (s1 == '\0' || s2 == '\0');
+		return (NULL);
 	ptr = (char *) malloc((len1 + len2 + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
