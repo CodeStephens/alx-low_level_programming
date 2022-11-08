@@ -36,12 +36,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return ("");
+		return ('\0');
 		len1 = 0;
 	}
 	if (s2 == NULL)
 	{
-		return ("");
+		return ('\0');
 		len2 = 0;
 	}
 	len1 = _strlen(s1);
