@@ -40,13 +40,24 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == NULL)
 		return (NULL);
 	if (s1 == NULL)
-		s1 = '\0';
-	if (s2 == NULL)
-		s2 = '\0';
-	for (i = 0; i < len1; i++)
-		ptr[i] = s1[i];
-	for (j = 0; j < len2; j++)
-		ptr[i + j] = s2[j];
+	{
+		for (i = 0; i < len2; i++)
+			ptr[i] = s2[i];
+	}
+	else if (s2 == NULL)
+	{
+		for (i = 0; i < len1; i++)
+			ptr[i] = s1[i];
+	}
+	else if (s1 == NULL && s2 == NULL)
+		ptr = NULL;
+	else
+	{
+		for (i = 0; i < len1; i++)
+			ptr[i] = s1[i];
+		for (j = 0; j < len2; j++)
+			ptr[i + j] = s2[j];
+	}
 	ptr[i + len2] = '\0';
 	return (ptr);
 }
