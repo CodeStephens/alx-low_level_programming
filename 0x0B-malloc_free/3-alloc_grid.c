@@ -26,8 +26,5 @@ int **alloc_grid(int width, int height)
 		for (j = 0; j < width; j++)
 			mat_array[i][j] = 0;
 	}
-	for (i = 0; i < height; i++)
-		free(mat_array[i]);
-	free(mat_array);
 	return (mat_array);
 }
