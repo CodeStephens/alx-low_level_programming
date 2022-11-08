@@ -31,21 +31,18 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 	int len1;
 	int len2;
+	int i;
+	int j;
 
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	ptr = (char *) malloc((len1 + len2 + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
-	ptr = s1;
-	while (*s1)
-		s1++;
-	while (*s2)
-	{
-		*s1 = *s2;
-		s1++;
-		s2++;
-	}
-	ptr[len1 + len2] = '\0';
+	for (i = 0; i < len1; i++)
+		ptr[i] = s1[i];
+	for (j = 0; j < len2; j++)
+		ptr[i + j] = s2[j];
+	ptr[i + len2] = '\0';
 	return (ptr);
 }
