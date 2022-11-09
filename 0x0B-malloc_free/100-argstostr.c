@@ -12,15 +12,19 @@ int av_len(int n, char **argsv)
 {
 	int len = 0;
 	int i;
+	int j;
 
 	for (i = 0; i < n; i++)
 	{
-		while (*argsv[i])
+		j = 0;
+		while (argsv[i][j])
 		{
 			len++;
-			argsv[i]++;
+			j++;
 		}
+		len++;
 	}
+	len++;
 	return (len);
 }
 /**
@@ -35,21 +39,25 @@ char *argstostr(int ac, char **av)
 {
 	int count;
 	int i;
+	int j;
+	int k;
 	char *ptr;
 
-	count = av_len(ac, av);
-	ptr = (char *) malloc(count * sizeof(char));
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	for (i = 0;i < ac; i++)
+	count = av_len(ac, av);
+	ptr = (char *) malloc(count * sizeof(char));
+	for (i = 0; i < ac; i++)
 	{
-		while(av[i])
+		j = 0;
+		while (av[i][j])
 		{
-			ptr[i] = *av[i];
-			_putchar(ptr[i]);
-			av[i]++;
+			ptr[k] = av[i][j];
+			k++;
+			j++;
 		}
-		_putchar('\n');
+		ptr[k] = '\n';
+		k++;
 	}
 	return (ptr);
 }
