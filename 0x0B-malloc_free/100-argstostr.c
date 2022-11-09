@@ -40,7 +40,7 @@ char *argstostr(int ac, char **av)
 	int count;
 	int i;
 	int j;
-	int k;
+	int k = 0;
 	char *ptr;
 
 	if (ac == 0 || av == NULL)
