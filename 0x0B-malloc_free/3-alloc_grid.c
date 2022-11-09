@@ -26,7 +26,13 @@ int **alloc_grid(int width, int height)
 	{
 		if (mat_array[i] == NULL)
 		{
-			free(mat_array[i]);
+			i--;
+			while (i >= 0)
+			{
+				free(mat_array[i]);
+				i--;
+			}
+			free(mat_array);
 			return (NULL);
 		}
 	}
