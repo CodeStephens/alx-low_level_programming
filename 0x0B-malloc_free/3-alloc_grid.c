@@ -19,10 +19,16 @@ int **alloc_grid(int width, int height)
 		mat_array[i] = (int *) malloc(width * sizeof(int));
 	if (mat_array == NULL)
 	{
-		for (i = 0; i < height; i++)
-			free(mat_array[i]);
 		free(mat_array);
 		return (NULL);
+	}
+	for (i = 0; i < height; i++)
+	{
+		if (mat_array[i] == NULL)
+		{
+			free(mat_array[i]);
+			return (NULL);
+		}
 	}
 	if (width <= 0 || height <= 0)
 		return (NULL);
