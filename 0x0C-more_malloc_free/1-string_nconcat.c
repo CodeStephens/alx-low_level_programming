@@ -19,9 +19,9 @@ int _strlen(char *str)
 	return (len);
 }
 /**
- * *string_nconcat - concatenates two strings 
+ * *string_nconcat - concatenates two strings
  * @s1: first string
- * @s2: second string 
+ * @s2: second string
  * @n: n bytes of s2 to be concatenated to s1
  *
  * Return: character
@@ -51,7 +51,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	j = 0;
-	while(s2[j])
+	while (s2[j])
 	{
 		if (n < len2)
 		{
@@ -73,6 +73,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			return (ptr);
 		}
 		ptr[i + 1] = '\0';
-	}	
+	}
 	return (ptr);
 }
