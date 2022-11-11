@@ -8,7 +8,7 @@
  */
 int _strlen(char *str)
 {
-	int i, len;
+	unsigned int i, len;
 
 	i = len = 0;
 	while (str[i])
@@ -29,7 +29,8 @@ int _strlen(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	unsigned int i, j, len1, len2;
+	unsigned int j, len2;
+	int i, len1;
 
 	i = 0;
 	if (s1 == NULL)
@@ -40,7 +41,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len2 = _strlen(s2);
 	ptr = malloc((len1 + n) * sizeof(char));
 	if (ptr == NULL)
+	{
+		free(ptr);
 		return (NULL);
+	}
 	while (s1[i] != '\0')
 	{
 		ptr[i] = s1[i];
@@ -65,7 +69,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 				i++;
 			}
 		}
-		ptr[i + 1] = '\0';
 	}
 	return (ptr);
 }
