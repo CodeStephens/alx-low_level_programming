@@ -45,20 +45,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		free(ptr);
 		return (NULL);
 	}
-	while (s1[i] != '\0')
+	while (s1[i])
 	{
 		ptr[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (s2[j] != '\0')
+	while (s2[j])
 	{
 		if (n < len2)
 		{
-			for (j = 0; j < n; j++)
+			while (j < n)
 			{
 				ptr[i] = s2[j];
-				i++;
+				i++, j++;
 			}
 			return (ptr);
 		}
