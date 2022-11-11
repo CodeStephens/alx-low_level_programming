@@ -60,6 +60,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 				ptr[i] = s2[j];
 				i++;
 			}
+			return (ptr);
 		}
 		if (n >= len2)
 		{
@@ -68,6 +69,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 				ptr[i] = s2[j];
 				i++;
 			}
+			return (ptr);
 		}
 	}
 	return (ptr);
