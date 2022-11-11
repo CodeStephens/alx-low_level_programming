@@ -52,22 +52,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		if (n < len2)
 		{
-			while (j < n)
+			for (j = 0; j < n; j++)
 			{
 				ptr[i] = s2[j];
 				i++;
-				j++;
 			}
-			return (ptr);
 		}
-		else if (n >= len2)
+		if (n >= len2)
 		{
 			for (j = 0; j < len2; j++)
 			{
 				ptr[i] = s2[j];
 				i++;
 			}
-			return (ptr);
 		}
 		ptr[i + 1] = '\0';
 	}
