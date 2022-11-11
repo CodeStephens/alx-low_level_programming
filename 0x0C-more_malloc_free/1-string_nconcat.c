@@ -42,13 +42,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	ptr = malloc((len1 + n) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
-	while (s1[i])
+	while (s1[i] != '\0')
 	{
 		ptr[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (s2[j])
+	while (s2[j] != '\0'))
 	{
 		if (n < len2)
 		{
