@@ -50,9 +50,9 @@ int *word_size(char *str, int words)
 			}
 			count++;
 			each_word_len[word] = count;
-			word++;
+			i++;
 		}
-		i++;
+		word++;
 	}
 	return (each_word_len);
 }
