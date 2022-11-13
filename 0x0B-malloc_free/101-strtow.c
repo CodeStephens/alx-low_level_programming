@@ -37,6 +37,7 @@ int *word_size(char *str, int words)
 	{
 		free(each_word_len);
 		return (NULL);
+	}
 	i = word = 0;
 	while (word < words)
 	{
