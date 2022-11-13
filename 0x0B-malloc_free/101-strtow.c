@@ -15,10 +15,7 @@ int word_count(char *str)
 	while (str[i])
 	{
 		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
-		{
-			len++;
-			i++;
-		}
+			len++, i++;
 		i++;
 	}
 	return (len);
@@ -44,10 +41,7 @@ int *word_size(char *str, int words)
 		{
 			count = 0;
 			while (str[i] != ' ')
-			{
-				count++;
-				i++;
-			}
+				count++, i++;
 			count++;
 			each_word_len[word] = count;
 			i++;
