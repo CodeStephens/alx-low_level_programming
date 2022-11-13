@@ -68,10 +68,17 @@ char **strtow(char *str)
 		return (NULL);
 	each_word_len = malloc(words * sizeof(int));
 	if (each_word_len == NULL)
+	{
+		free(each_word_len);
 		return (NULL);
+	}
 	each_word_len = word_size(str, words);
 	ptr = malloc((words + 1) * sizeof(char *));
 	if (ptr == NULL)
+	{
+		for (i = 0; i < words + 1; i++)
+			free(ptr[i]);
+		free(ptr);
 		return (NULL);
 	i = j = k = 0;
 	while (i < words && str[j] != '\0')
