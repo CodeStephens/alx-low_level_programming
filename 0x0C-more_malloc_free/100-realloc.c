@@ -7,7 +7,7 @@
  *
  * Return: pointer to the memory area
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+void *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int count = 0;
 
