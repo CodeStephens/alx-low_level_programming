@@ -38,19 +38,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	len1 = _strlen(s1);
-	ptr = malloc((len1 + n + 1) * sizeof(char));
+	len1 = (len1 + n) * sizeof(char);
+	ptr = malloc(len1 + 1);
 	if (ptr == NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	while (s1[i])
+	while (i < len1 && s1[i] != '\0')
 	{
 		ptr[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (s2[j])
+	while (i < len1 && s2[j] != '\0')
 	{
 		ptr[i] = s2[j];
 		i++, j++;
