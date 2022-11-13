@@ -87,13 +87,6 @@ char **strtow(char *str)
 	{
 		word_counter = i;
 		ptr[i] = malloc(each_word_len[i] + sizeof(char));
-		if (ptr[i] == NULL)
-		{
-			for (i = i - 1; i >= 0; i--)
-				free(ptr[i--]);
-			free(ptr);
-			return (NULL);
-		}
 		while (str[j] != '\0' && i == word_counter)
 		{
 			if (str[j] != ' ')
