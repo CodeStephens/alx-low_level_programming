@@ -28,15 +28,15 @@ void *_memcpy(char *dest, char *src, unsigned int n)
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *new_ptr;
+	char *new_ptr;
 	unsigned int min_value;
 
-	new_ptr = malloc(new_size);
+	new_ptr = (char *) malloc(new_size);
 	if (new_ptr == NULL)
 		return (NULL);
 	if (ptr == NULL)
 	{
-		new_ptr = malloc(new_size);
+		new_ptr = (char *) malloc(new_size);
 		return (new_ptr);
 	}
 	if (new_ptr != NULL && new_size == 0)
