@@ -92,7 +92,7 @@ char **strtow(char *str)
 		}
 		while (str[j] != '\0' && i == word_counter)
 		{
-			if (str[j] == ' ')
+			if (str[j] != ' ')
 			{
 				while (str[j] != '\0' && str[j] != ' ')
 				{
