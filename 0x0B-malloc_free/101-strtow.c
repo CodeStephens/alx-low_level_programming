@@ -80,6 +80,7 @@ char **strtow(char *str)
 			free(ptr[i]);
 		free(ptr);
 		return (NULL);
+	}
 	i = j = k = 0;
 	while (i < words && str[j] != '\0')
 	{
