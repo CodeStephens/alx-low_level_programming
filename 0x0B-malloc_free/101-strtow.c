@@ -62,9 +62,9 @@ char **strtow(char *str)
 	char **ptr;
 	int i, j, k, word_counter, words, *each_word_len;
 
-	if (str == NULL || *str == '\0')
-		return (NULL);
 	words = word_count(str);
+	if (str == NULL || words == 0)
+		return (NULL);
 	each_word_len = malloc(words * sizeof(int));
 	if (each_word_len == NULL)
 		return (NULL);
