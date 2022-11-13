@@ -38,7 +38,7 @@ int *word_size(char *str, int words)
 	if (each_word_len == NULL)
 		return (NULL);
 	i = word = 0;
-	for (word = 0; word < words; word++)
+	while (word < words)
 	{
 		if (str[i] != ' ')
 		{
@@ -50,6 +50,7 @@ int *word_size(char *str, int words)
 			}
 			count++;
 			each_word_len[word] = count;
+			word++;
 		}
 		i++;
 	}
