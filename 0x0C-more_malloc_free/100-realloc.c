@@ -46,7 +46,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		min_value = new_size;
 	else
 		min_value = old_size;
-	if (ptr ==NULL)
+	if (ptr == NULL)
 	{
 		new_ptr = malloc(new_size);
 		return (new_ptr);
