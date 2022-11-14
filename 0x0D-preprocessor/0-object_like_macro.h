@@ -2,5 +2,5 @@
 #define main_h
 
 	#define SIZE 1024
-	
+
 #endif /* main_h */
