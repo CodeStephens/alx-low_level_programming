@@ -4,10 +4,11 @@
  * _memcpy - copies n bytes of memory area from src to dest
  * @dest: memory location to copy to
  * @src: memory location to copy from
+ * @n: size of bytes to be copied from src
  *
  * Return: pointer to the memory area
  */
-void *_memcpy(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int count = 0;
 
@@ -28,15 +29,15 @@ void *_memcpy(char *dest, char *src, unsigned int n)
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *new_ptr;
+	void *new_ptr;
 	unsigned int min_value;
 
-	new_ptr = (char *) malloc(new_size);
+	new_ptr = malloc(new_size);
 	if (new_ptr == NULL)
 		return (NULL);
 	if (ptr == NULL)
 	{
-		new_ptr = (char *) malloc(new_size);
+		new_ptr = malloc(new_size);
 		return (new_ptr);
 	}
 	if (new_ptr != NULL && new_size == 0)
