@@ -35,11 +35,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	new_ptr = malloc(new_size);
 	if (new_ptr == NULL)
 		return (NULL);
-	if (ptr == NULL)
-	{
-		new_ptr = malloc(new_size * min_value);
-		return (new_ptr);
-	}
 	if (new_ptr != NULL && new_size == 0)
 	{
 		free(ptr);
@@ -51,6 +46,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		min_value = new_size;
 	else
 		min_value = old_size;
+	if (ptr ==NULL)
+	{
+		new_ptr = malloc(new_size * min_value);
+		return (new_ptr);
+	}
 	new_ptr = _memcpy(new_ptr, ptr, min_value);
 	free(ptr);
 	return (new_ptr);
