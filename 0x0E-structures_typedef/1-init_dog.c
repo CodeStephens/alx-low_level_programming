@@ -2,7 +2,7 @@
 
 /**
  * init_dog - struct dog initialization
- * @*d: userdefined datatype dog
+ * @d: userdefined datatype dog
  * @name: second parameter
  * @age: third parameter
  * @owner: fourth parameter
