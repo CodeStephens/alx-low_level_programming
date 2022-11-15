@@ -2,6 +2,7 @@
 #define struct_dog
 
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * struct dog - userdefined datatype dog
  * @name: first member
