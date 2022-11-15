@@ -6,9 +6,14 @@
  *
  * Description:
  */
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
+#ifndef struct_dog
+#define struct_dog
+
+	struct dog
+	{
+		char *name;
+		float age;
+		char *owner;
+	};
+
+#endif /* struct_dog */
