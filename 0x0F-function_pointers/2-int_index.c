@@ -18,8 +18,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		if (cmp(array[count]) != 0)
 			return (count);
-		else
-			return (-1);
 	}
-	return (count);
+	return (-1);
 }
