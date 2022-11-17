@@ -21,6 +21,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		each_word = va_arg(args, char *);
+		if (i == n - 1 && each_word != NULL)
+			printf("%s\n", each_word);
+		if (i == n - 1 && each_word == NULL)
+			printf("(nil)\n");
 		if (i < n - 1)
 		{
 			if (each_word != NULL)
@@ -28,8 +32,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			else
 				printf("(nil)%c ", *separator);
 		}
-		if (i == n - 1)
-			printf("%s\n", each_word);
 	}
 	va_end(args);
 }
