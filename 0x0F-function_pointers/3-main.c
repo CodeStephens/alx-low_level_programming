@@ -9,23 +9,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, x, y;
+	char *operator;
+	int (*res_address)(int, int);
+	int num1, num2, result;
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	for (i = 0; i < 5; i++)
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	operator = argv[2];
+	if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
 	{
-		if (argv[3] == ops.op[i])
-		{
-			x = atoi(argv[2]);
-			y = atoi(argv[4]);
-			printf("%d", ops.f[i](x, y));
-			return (0);
-		}
+		printf("Error\n");
+		exit(99);
 	}
-	printf("Error\n");
-	exit(99);
+	res_address = get_op_func(operator);
+	result = res_address(num1, num2);
+	printf("%d\n", result);
+	return (0);
 }

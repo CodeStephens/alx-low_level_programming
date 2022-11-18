@@ -3,14 +3,12 @@
 /**
  * get_op_func - pointer to the operation functions to be performed
  * @s: symbol(+,*,-,/,%) of operation to be performed
- * @a: first variable/argument
- * @b: second variable/argument
  *
  * Return: integer
  */
-int (*get_op_func(char *s))(int &a,int &b)
+int (*get_op_func(char *s))(int a, int b)
 {
-	op_t ops[] = {
+	op_t op_s[] = {
 		{"+", opp_add},
 		{"-", opp_sub},
 		{"*", opp_mul},
@@ -21,12 +19,11 @@ int (*get_op_func(char *s))(int &a,int &b)
 	int i;
 
 	i = 0;
-	while (i < 5)
+	while (op_s[i].op)
 	{
-		if (ops[i].op == *s)
-			return (ops[i].f);
+		if (*(op_s[i].op) == *s)
+			return (op_s[i].f);
 		i++;
 	}
-	if (*ops != *s && i == 5)
-		return (NULL);
+	return (NULL);
 }
