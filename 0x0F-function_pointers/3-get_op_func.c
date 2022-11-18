@@ -9,11 +9,11 @@
 int (*get_op_func(char *s))(int a, int b)
 {
 	op_t op_s[] = {
-		{"+", opp_add},
-		{"-", opp_sub},
-		{"*", opp_mul},
-		{"/", opp_div},
-		{"%", opp_mod},
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
 		{NULL, NULL}
 	};
 	int i;
