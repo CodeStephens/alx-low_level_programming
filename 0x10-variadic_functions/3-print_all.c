@@ -1,3 +1,5 @@
+#include "variadic_functions.h"
+
 /**
  * print_string - Print the string
  * @args: Where the string is
