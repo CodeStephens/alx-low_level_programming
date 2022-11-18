@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 			== 0)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
 	res_address = get_op_func(operator);
 	result = res_address(num1, num2);
