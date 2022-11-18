@@ -49,7 +49,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	char *sep;
-	print_form_t print_form[] = {
+	print_form[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
