@@ -43,3 +43,5 @@ char *_strdup(char *str)
 	}
 	return (ptr);
 }
+
+nfus
