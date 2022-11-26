@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * add_node - adds node to the beginning of the list_t list
+ * add_node_end - adds node to the beginning of the list_t list
  * @str: string to be duplicated
  * @head: pointer to the head of list_t
  *
  * Return: pointer to the new element
  */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *ptrHead, *placeHolder;
 	int i = 0;
