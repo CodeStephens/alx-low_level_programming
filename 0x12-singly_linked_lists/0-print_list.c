@@ -4,6 +4,7 @@
  * print_list - prints all the elements of the list_t list
  * @h: pointer to struct
  *
+ * Description:
  * Return: integer
  */
 size_t print_list(const list_t *h)
