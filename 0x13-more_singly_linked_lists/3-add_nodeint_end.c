@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint_end - add new node at the end of the listint_t list
- * @h: pointer to head of the listint_t lists
+ * @head: pointer to head of the listint_t lists
  * @n: integer to add at the beginning of the linked list
  *
  * Return: pointer to the newly added element
