@@ -22,7 +22,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		count++;
 		len = len->next;
 	}
-	if (index < count)
+	if (index < count - 1)
 		return (NULL);
 	for (i = 0; i < count; i++)
 	{
