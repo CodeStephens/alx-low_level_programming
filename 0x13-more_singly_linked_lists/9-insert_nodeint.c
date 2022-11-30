@@ -37,7 +37,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		if (idx == i)
 		{
 			placeHolder = temp->next;
-			temp->next = new;
+			temp = new;
 			new->next = placeHolder;
 			return (new);
 		}
