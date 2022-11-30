@@ -23,9 +23,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		return (NULL);
 	for (i = 0; i < count; i++)
 	{
-		temp = temp->next;
 		if (index == i)
 			break;
+		temp = temp->next;
 	}
 	return (temp);
 }
