@@ -42,6 +42,11 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (i = 0; i < len; i++)
 	{
+		if (i == 0)
+		{
+			sum += sum;
+			break;
+		}
 		if (temp[i] == 1)
 			sum += expo(2, i);
 	}
