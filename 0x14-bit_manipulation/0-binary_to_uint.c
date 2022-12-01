@@ -27,7 +27,10 @@ int expo(int a, int b)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int len, i, sum;
+	const char *temp;
 
+	temp = b;
+	sum = 0;
 	if (b == NULL)
 		return (0);
 	while (b)
@@ -39,7 +42,8 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (i = 0; i < len; i++)
 	{
-		sum += expo(2, i);
+		if (temp[i] == 1)
+			sum += expo(2, i);
 	}
 	return (sum);
 }
