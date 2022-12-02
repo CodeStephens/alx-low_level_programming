@@ -11,7 +11,7 @@ int expo(int a, int b)
 {
 	if (b == 0)
 		return (1);
-	return (a * expo(a, b - 1));
+	return (a * expo(a, (b - 1)));
 }
 /**
  * binary_to_uint - converts a binary number to an unsigned int in decimal
@@ -42,7 +42,7 @@ unsigned int binary_to_uint(const char *b)
 	for (i = 0; i <= len; i++)
 	{
 		if (temp[i] == '1')
-			sum += expo(2, len - i);
+			sum += expo(2, (len - i));
 	}
 	return (sum);
 }
