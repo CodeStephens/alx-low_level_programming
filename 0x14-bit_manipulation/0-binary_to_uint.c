@@ -9,14 +9,9 @@
  */
 int expo(int a, int b)
 {
-	int i, result;
-
-	result = a;
-	for (i = 1; i < b; i++)
-	{
-		result *= a;
-	}
-	return (result);
+	if (b == 0)
+		return (1);
+	return (a * expo(a, b - 1));
 }
 /**
  * binary_to_uint - converts a binary number to an unsigned int in decimal
@@ -30,25 +25,24 @@ unsigned int binary_to_uint(const char *b)
 	const char *temp;
 
 	temp = b;
-	sum = 0;
+	len = sum = 0;
 	if (b == NULL)
 		return (0);
-	while (b)
+	while (*b)
 	{
-		if (*b != 0 || *b != 1)
-			return (0);
-		len++;
-		b++;
-	}
-	for (i = 0; i < len; i++)
-	{
-		if (i == 0)
+		if (*b == '0' || *b == '1')
 		{
-			sum += sum;
-			break;
+			len++;
+			b++;
 		}
-		if (temp[i] == 1)
-			sum += expo(2, i);
+		else
+			return (0);
+	}
+	len = len - 1;
+	for (i = 0; i <= len; i++)
+	{
+		if (temp[i] == '1')
+			sum += expo(2, len - i);
 	}
 	return (sum);
 }
