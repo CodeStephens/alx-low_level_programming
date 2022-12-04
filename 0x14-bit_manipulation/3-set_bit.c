@@ -9,10 +9,10 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (n == NULL)
-		return (-1);
-	*n = *n >> index;
-	*n = *n | 1;
-	*n = *n << index;
-	return (1);
+        if (n == NULL)
+                return (-1);
+        *n = *n >> index;
+        *n = *n | 1;
+        *n = *n << index;
+        return (1);
 }
