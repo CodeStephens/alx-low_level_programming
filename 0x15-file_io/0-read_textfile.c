@@ -10,17 +10,42 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int f_open;
-	size_t count;
+	ssize_t reader, output, f_open;
+        char *temp;
 
-	if (filename == NULL)
-		return (0);
-	f_open = open(filename, O_CREAT | O_WRONLY | O_APPEND, 600);
-	if (f_open < 0)
-		return (0);
-	count = write(f_open, filename, letters);
-	if (count != letters)
-		return (0);
-	close(f_open);
-	return (count);
+        if (filename == NULL)
+                return (0);
+
+        temp = malloc(letters);
+        if (temp == NULL)
+                return (0);
+
+        f_open = open(filename, O_RDONLY);
+
+        if (f_open == -1)
+        {
+                free(temp);
+                return (0);
+        }
+
+        reader = read(f_open, temp, letters);
+
+        if (reader == -1)
+        {
+                free(temp);
+                return (0);
+        }
+
+        output = write(STDOUT_FILENO, temp, reader);
+
+        if (output == -1 || output != reader)
+        {
+                free(temp);
+                return (0);
+        }
+
+        close(f_open);
+        free(temp);
+        return (output);
+
 }
