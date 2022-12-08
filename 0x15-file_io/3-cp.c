@@ -3,7 +3,7 @@
 
 /**
  * _err_call - check for error code and give appropriate error message
- * @stat: error code to be checked
+ * @error_value: error code to be checked
  *
  * Description:
  * Return: nothing!
