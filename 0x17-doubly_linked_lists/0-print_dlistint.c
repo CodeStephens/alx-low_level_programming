@@ -12,6 +12,8 @@ size_t print_dlistint(const dlistint_t *h)
 	size_t count;
 	const dlistint_t *temp;
 
+	if (h == NULL)
+		exit(1);
 	temp = h;
 	while (temp)
 	{
