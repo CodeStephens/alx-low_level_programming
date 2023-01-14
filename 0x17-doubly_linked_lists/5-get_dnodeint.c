@@ -8,9 +8,8 @@
  * Description:
  * Return: pointer to the node at the index
  */
-dlistint *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	dlistint_t *temp;
 	unsigned int count = 0;
 
 	while (count <= index)
@@ -20,5 +19,5 @@ dlistint *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		head = head->next;
 		count++;
 	}
-	return (NULL)
+	return (NULL);
 }
