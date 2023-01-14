@@ -1,1 +1,0 @@
-Introduction singly linked list
