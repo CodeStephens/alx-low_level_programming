@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+This script runs a function to determine the perimeter of a grid
+"""
 
 def island_perimeter(grid):
     """
