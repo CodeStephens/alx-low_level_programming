@@ -10,6 +10,6 @@ def island_perimeter(grid):
     for x in range(len(grid)):
         for y in range(len(grid[x])):
             if grid[x][y] == 1:
-                    pm += 1
+                pm += 1
     pm *= 2
     return (pm)
