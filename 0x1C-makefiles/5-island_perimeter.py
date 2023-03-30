@@ -3,6 +3,7 @@
 This script runs a function to determine the perimeter of a grid
 """
 
+
 def island_perimeter(grid):
     """
     This function calculated the perimeter
