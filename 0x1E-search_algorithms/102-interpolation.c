@@ -24,21 +24,27 @@ int interpolation_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-	/* implementing the interpolation technique */
-	while (H >= L && array[L] <= value && array[H] >= value)
+	/* checking if array[key] is out of range */
+	key = L + ((value - array[L]) * (H - L)) / (array[H] - array[L]);
+	if (key > H)
+		printf("Value checked array[%lu] is out of range\n", key);
+	else
 	{
-		key = L + ((value - array[L]) * (H - L)) / (array[H] - array[L]);
+		/* implement interpolation technique */
+		while (value >= array[L] && value <= array[H] && H >= L)
+		{
+			key = L + ((value - array[L]) * (H - L)) / (array[H] - array[L]);
 
-		printf("Value checked array[%lu] = [%d]\n", key, array[key]);
-		if (array[key] == value)
-			return (key);
-		if (array[key] < value)
-			L = key + 1;
-		else
-			H = key - 1;
+			printf("Value checked array[%lu] = [%d]\n", key, array[key]);
+			if (array[key] == value)
+				return (key);
+			if (array[key] < value)
+				L = key + 1;
+			else
+				H = key - 1;
+		}
 	}
 
 	/* value not found */
-	printf("Value checked array[%lu] is out of range\n", key);
 	return (-1);
 }
