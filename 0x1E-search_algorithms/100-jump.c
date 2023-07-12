@@ -26,16 +26,21 @@ int jump_search(int *array, size_t size, int value)
 	prev = 0;
 	next = iter_step;
 
+	printf("Value checked array[%lu] = [%d]\n", prev, array[prev]);
+
 	/* Find the block where the target may reside */
 	while (next < size && array[next] < value)
 	{
 		prev = next;
+		printf("Value checked array[%lu] = [%d]\n", prev, array[prev]);
 		next += iter_step;
 	}
 
+	printf("Value found between indexes [%lu] and [%lu]\n", prev, next);
 	/* Perform linear search within the block */
 	for (i = prev; i < next && i < size; i++)
 	{
+		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 		if (array[i] == value)
 			return (i);
 	}
