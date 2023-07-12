@@ -15,31 +15,31 @@
 
 int jump_search(int *array, size_t size, int value)
 {
-	size_t iter_step;
-	int prev, next, i;
+	size_t iter_step, prev, next, i;
 
-	//test for validity of the array
+	/* test for validity of the array */
 	if (array == NULL)
 		return (-1);
 
-	//continue with the jump search algorithm
+	/* continue with the jump search algorithm */
 	iter_step = sqrt(size);
 	prev = 0;
 	next = iter_step;
 
-	// Find the block where the target may reside
-	while (next < size && arr[next] < value)
+	/* Find the block where the target may reside */
+	while (next < size && array[next] < value)
 	{
 		prev = next;
 		next += iter_step;
 	}
 
-	// Perform linear search within the block
-	for (i = prev; i < next && i < n; i++)
+	/* Perform linear search within the block */
+	for (i = prev; i < next && i < size; i++)
 	{
-		if (arr[i] == target)
-			return i;
+		if (array[i] == value)
+			return (i);
 	}
-	// Element not found
+
+	/* Element not found */
 	return (-1);
 }
