@@ -25,7 +25,7 @@ int interpolation_search(int *array, size_t size, int value)
 		return (-1);
 
 	/* implementing the interpolation technique */
-	while (L <= H && array[L] <= value && array[H] >= value)
+	while (H >= L && array[L] <= value && array[H] >= value)
 	{
 		key = L + ((value - array[L]) * (H - L)) / (array[H] - array[L]);
 
