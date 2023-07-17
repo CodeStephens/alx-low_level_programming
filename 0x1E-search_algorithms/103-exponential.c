@@ -18,11 +18,12 @@ int b_search(int *array,size_t L, size_t R, int value)
 
 	while (L <= R)
 	{
+		printf("Searching in array: ");
 		for (i = L; i < R; ++i)
 		{
-			printf("Searching in array: [%lu],", i);
+			printf("%d, ", array[i]);
 		}
-		printf("[%lu]\n", i);
+		printf("%d\n", array[i]);
 		mid = L + (R - L) / 2;
 		if (array[mid] == value)
 			return (mid);
