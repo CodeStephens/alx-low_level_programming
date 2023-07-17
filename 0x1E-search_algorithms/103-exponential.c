@@ -12,7 +12,7 @@
  *
  */
 
-int b_search(int *array,size_t L, size_t R, int value)
+int b_search(int *array, size_t L, size_t R, int value)
 {
 	size_t mid, i;
 
